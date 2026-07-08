@@ -5,7 +5,7 @@ permalink: /academic-services/
 author_profile: true
 ---
 
-- NeurIPS/ICLR/ICML, 2023-present
-- AAAI, 2025-present
-- IEEE Transactions on Evolutionary Computation (TEVC)
-- IEEE Transactions on Cognitive and Developmental Systems (TCDS)
+- Reviewer for NeurIPS, ICLR, and ICML, 2023-present
+- Reviewer for AAAI, 2025-present
+- Reviewer for IEEE Transactions on Evolutionary Computation (TEVC)
+- Reviewer for IEEE Transactions on Cognitive and Developmental Systems (TCDS)
