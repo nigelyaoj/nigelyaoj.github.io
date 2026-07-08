@@ -307,6 +307,24 @@
     white-space: nowrap;
   }
 
+  .author__desktop {
+    white-space: normal;
+
+    @include breakpoint($large) {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .icon-pad-right {
+      flex: 0 0 auto;
+    }
+  }
+
+  .author__label {
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+
   a {
     display: block;
     margin-bottom: 5px;

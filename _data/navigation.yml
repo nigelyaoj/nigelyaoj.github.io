@@ -9,7 +9,7 @@
 
 main:
   - title: "Publications"
-    url: /publications/
+    url: /#selected-publications
 
   # - title: "Teaching"
   #   url: /teaching/    
@@ -18,13 +18,13 @@ main:
   #   url: /portfolio/
 
   - title: "Academic Services"
-    url: /academic-services/
+    url: /#academic-services
 
   - title: "Teaching Assistant"
-    url: /teaching-assistant/
+    url: /#teaching-assistant
 
   - title: "Awards"
-    url: /awards/
+    url: /#awards
     
   # - title: "CV"
   #   url: /cv/
