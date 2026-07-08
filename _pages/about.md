@@ -29,6 +29,15 @@ redirect_from:
     vertical-align: -0.12em;
     border-radius: 3px;
   }
+
+  .visitor-counter {
+    margin-top: 1.5rem;
+  }
+
+  .visitor-counter img {
+    max-width: 100%;
+    border: 0;
+  }
 </style>
 
 I am currently a Ph.D. student in Data Science and Artificial Intelligence at <img class="link-icon" src="https://www.google.com/s2/favicons?domain=polyu.edu.hk&sz=32" alt="">[The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), supervised by Prof. <img class="link-icon" src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=32" alt="">[KC Tan](https://scholar.google.com/citations?user=LFngSp0AAAAJ&hl=en). My research lies at the intersection of <a class="topic-rl" href="/#diversity-rl">Reinforcement Learning </a> and <a class="topic-llm" href="/#llm-reasoning">LLM Reasoning</a>. More broadly, I am interested in <span class="topic-other">Interpretability</span>, <span class="topic-other">Evolutionary Computation with RL (EC + RL)</span>, and <span class="topic-other">Model Reuse</span>.
@@ -62,3 +71,7 @@ I am always happy to discuss research ideas around <a class="topic-rl" href="/#d
 - Sun Yat-sen University Outstanding Graduate, 2020
 - Sun Yat-sen University First-Class Scholarship, 2016-2018
 - Samsung Scholarship, 2017-2018
+
+<div class="visitor-counter">
+  <a href="https://info.flagcounter.com/YXqG"><img src="https://s01.flagcounter.com/count2/YXqG/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+</div>
