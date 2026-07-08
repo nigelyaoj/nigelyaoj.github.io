@@ -1,36 +1,132 @@
 ---
 layout: archive
-title: "Publications"
+title: "Selected Publication"
 permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<style>
+  .publication-note {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .publication-group {
+    margin-top: 1.8rem;
+    --publication-accent: #c95757;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .publication-group--llm_reasoning {
+    --publication-accent: #c95757;
+  }
+
+  .publication-group--diversity_rl {
+    --publication-accent: #9b5aa0;
+  }
+
+  .publication-group--others {
+    --publication-accent: #55966f;
+  }
+
+  .publication-group h2 {
+    margin-bottom: 0.75rem;
+    border-bottom: none;
+    color: var(--publication-accent);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .publication-list {
+    margin-top: 0;
+    padding-left: 1.1rem;
+    border-left: 3px solid var(--publication-accent);
+    list-style: none;
+  }
+
+  .publication-list li {
+    margin-bottom: 1.2rem;
+    color: #333;
+    line-height: 1.45;
+    font-size: 1.03rem;
+  }
+
+  .publication-title {
+    color: #333;
+    display: inline;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .publication-authors {
+    display: block;
+    margin-top: 0.1rem;
+  }
+
+  .publication-authors strong {
+    font-weight: 700;
+  }
+
+  .publication-venue {
+    color: var(--publication-accent);
+    font-weight: 700;
+  }
+
+  .publication-highlight {
+    color: #2f74b5;
+    font-weight: 700;
+  }
+
+  .publication-description {
+    margin: 0.25rem 0 0;
+    color: #333;
+    font-size: 0.95rem;
+  }
+
+  .publication-description::before {
+    content: "✎ ";
+  }
+
+  .publication-description p {
+    display: inline;
+    margin: 0;
+  }
+</style>
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+{% if site.author.googlescholar %}
+  <div class="wordwrap publication-note">You can find my full publications on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
+{% assign publication_groups = "llm_reasoning|🤖 LLM Reasoning|||diversity_rl|🎮 Diversity in RL|||others|🧩 Others (CV & GNN)" | split: "|||" %}
 
+{% for group in publication_groups %}
+  {% assign group_parts = group | split: "|" %}
+  {% assign group_key = group_parts[0] %}
+  {% assign group_title = group_parts[1] %}
+  {% assign group_publications = site.publications | where: "pub_group", group_key | sort: "date" | reverse %}
 
+  <div class="publication-group publication-group--{{ group_key }}">
+    <h2>{{ group_title }}</h2>
+    <ul class="publication-list">
+      {% for post in group_publications %}
+        {% if post.paperurl %}
+          {% assign publication_url = post.paperurl %}
+        {% else %}
+          {% assign publication_url = base_path | append: post.url %}
+        {% endif %}
+        {% assign publication_venue = post.display_venue | default: post.venue %}
+        {% assign publication_year = post.date | date: "%Y" %}
+        <li>
+          [<span class="publication-venue">{{ publication_venue }} {{ publication_year }}</span>{% if post.highlight %} <span class="publication-highlight">{{ post.highlight }}</span>{% endif %}]
+          <a class="publication-title" href="{{ publication_url }}">{{ post.title }}</a>
+          <span class="publication-authors">{{ post.authors }}.</span>
+          <div class="publication-description">{{ post.content | markdownify }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
