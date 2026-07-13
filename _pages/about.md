@@ -63,6 +63,7 @@ I am always happy to discuss research ideas around <a class="topic-rl" href="/#d
 - COMP 6707: Computational Intelligence, The Hong Kong Polytechnic University, Spring 2025
 - DSAI 4205: Big Data Analysis, The Hong Kong Polytechnic University, Fall 2025 and Spring 2026
 
+{% comment %}
 <h2 id="awards">Awards</h2>
 
 - PolyU Presidential PhD Fellowship Scheme (PPPFS), 2025-2028
@@ -71,6 +72,7 @@ I am always happy to discuss research ideas around <a class="topic-rl" href="/#d
 - Sun Yat-sen University Outstanding Graduate, 2020
 - Sun Yat-sen University First-Class Scholarship, 2016-2018
 - Samsung Scholarship, 2017-2018
+{% endcomment %}
 
 <div class="visitor-counter">
   <a href="https://info.flagcounter.com/YXqG"><img src="https://s01.flagcounter.com/count2/YXqG/bg_FFFFFF/txt_000000/border_CCCCCC/columns_4/maxflags_20/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
