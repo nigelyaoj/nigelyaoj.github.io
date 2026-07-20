@@ -5,6 +5,13 @@
     font-family: Georgia, "Times New Roman", serif;
   }
 
+  .publication-footnote {
+    margin: -0.4rem 0 1.2rem;
+    color: #333;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.95rem;
+  }
+
   .publication-group {
     margin-top: 1.8rem;
     --publication-accent: #c95757;
@@ -93,6 +100,8 @@
 {% if include.show_note and site.author.googlescholar %}
   <div class="wordwrap publication-note">You can find my full publications on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
+
+<div class="publication-footnote">(* equal contribution)</div>
 
 {% assign publication_groups = "llm_reasoning|🤖 LLM Reasoning|||diversity_rl|🎮 Diversity in RL|||others|🧩 Others (CV & GNN)" | split: "|||" %}
 
