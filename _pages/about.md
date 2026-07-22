@@ -75,21 +75,21 @@ redirect_from:
 
 <div class="about-language-panel" data-about-language-panel="en" markdown="1">
 
-I am currently a Ph.D. student in Data Science and Artificial Intelligence at <img class="link-icon" src="https://www.google.com/s2/favicons?domain=polyu.edu.hk&sz=32" alt="">[The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), supervised by Prof. <img class="link-icon" src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=32" alt="">[KC Tan](https://scholar.google.com/citations?user=LFngSp0AAAAJ&hl=en). My research lies at the intersection of <a class="topic-rl" href="/#diversity-rl">Reinforcement Learning </a> and <a class="topic-llm" href="/#llm-reasoning">LLM Reasoning</a>. More broadly, I am interested in <span class="topic-other">Interpretability</span>, <span class="topic-other">Evolutionary Computation with RL (EC + RL)</span>, and <span class="topic-other">Model Reuse</span>.
+I am currently a Ph.D. student in Data Science and Artificial Intelligence at <img class="link-icon" src="https://www.google.com/s2/favicons?domain=polyu.edu.hk&sz=32" alt="">[The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), supervised by Prof. <img class="link-icon" src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=32" alt="">[KC Tan](https://scholar.google.com/citations?user=LFngSp0AAAAJ&hl=en). My research lies at the intersection of <a class="topic-rl" href="/#diversity-rl">Reinforcement Learning </a> and <a class="topic-llm" href="/#llm-reasoning">LLM Reasoning</a>. More broadly, I am interested in <span class="topic-other">Interpretability</span> and <span class="topic-other">Evolutionary Computation with RL (EC + RL)</span>.
 
 I received my M.S. in Applied Statistics from <img class="link-icon" src="https://www.google.com/s2/favicons?domain=fudan.edu.cn&sz=32" alt="">[Fudan University](https://www.fudan.edu.cn/en/) and my B.S. in Statistics from <img class="link-icon" src="https://www.google.com/s2/favicons?domain=sysu.edu.cn&sz=32" alt="">[Sun Yat-sen University](https://www.sysu.edu.cn/sysuen/). I was fortunate to enjoy research experiences at [Tencent AI Lab](https://ai.tencent.com/ailab/en/index), advised by Dr. <img class="link-icon" src="https://www.google.com/s2/favicons?domain=haobofu.github.io&sz=32" alt="">[Haobo Fu](https://haobofu.github.io/), where I focused on Policy Diversity in RL; at [ByteDance Seed](https://seed.bytedance.com/en/), advised by Xiongcai Luo, where I worked on efficient reasoning and on-policy distillation; and at [Amazon Web Services (AWS)](https://aws.amazon.com/), advised by <img class="link-icon" src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=32" alt="">[Tong He](https://scholar.google.com/citations?user=hV5D8GYAAAAJ&hl=en) and <img class="link-icon" src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=32" alt="">[Tianjun Xiao](https://scholar.google.com/citations?user=DaKJ9pAAAAAJ&hl=en), where I worked on video object segmentation.
 
-I am always happy to discuss research ideas around <a class="topic-rl" href="/#diversity-rl">RL</a>, <a class="topic-llm" href="/#llm-reasoning">LLM Reasoning</a>, <span class="topic-other">Interpretability</span>, <span class="topic-other">EC + RL</span>, and <span class="topic-other">Model Reuse</span>. Please feel free to contact me at [nigelyaoj@gmail.com](mailto:nigelyaoj@gmail.com).
+I am always happy to discuss research ideas around <a class="topic-rl" href="/#diversity-rl">RL</a>, <a class="topic-llm" href="/#llm-reasoning">LLM Reasoning</a>, <span class="topic-other">Interpretability</span>, and <span class="topic-other">EC + RL</span>. Please feel free to contact me at [nigelyaoj@gmail.com](mailto:nigelyaoj@gmail.com).
 
 </div>
 
 <div class="about-language-panel" data-about-language-panel="zh" markdown="1" hidden>
 
-我目前是[香港理工大学](https://www.polyu.edu.hk/)数据科学与人工智能方向的博士生，由 KC Tan 教授指导。我的研究兴趣主要集中在强化学习（RL）与大语言模型（LLM）推理的交叉方向，也关注可解释性、演化计算与强化学习（EC + RL）以及模型复用。
+我目前是[香港理工大学](https://www.polyu.edu.hk/)数据科学与人工智能方向的博士生，由 KC Tan 教授指导。我的研究兴趣主要集中在强化学习（RL）与大语言模型（LLM）推理的交叉方向，也关注可解释性以及演化计算与强化学习（EC + RL）。
 
 我硕士毕业于[复旦大学](https://www.fudan.edu.cn/)应用统计专业，本科毕业于[中山大学](https://www.sysu.edu.cn/)统计学专业。关于研究经历，我有幸在 [Tencent AI Lab](https://ai.tencent.com/ailab/en/index) 参与研究，在 Haobo Fu 指导下关注 RL 中的策略多样性；在 [ByteDance Seed](https://seed.bytedance.com/en/) 参与 efficient reasoning 和 on-policy distillation 相关研究，由 Xiongcai Luo 指导；也曾在 [Amazon Web Services（AWS）](https://aws.amazon.com/) 参与 video object segmentation 相关研究，由 [Tong He](https://scholar.google.com/citations?user=hV5D8GYAAAAJ&hl=en) 和 [Tianjun Xiao](https://scholar.google.com/citations?user=DaKJ9pAAAAAJ&hl=en) 指导。
 
-欢迎交流 RL、LLM Reasoning、可解释性、EC + RL 和模型复用相关研究问题，也可以通过 [nigelyaoj@gmail.com](mailto:nigelyaoj@gmail.com) 联系我。
+欢迎交流 RL、LLM Reasoning、可解释性和 EC + RL 相关研究问题，也可以通过 [nigelyaoj@gmail.com](mailto:nigelyaoj@gmail.com) 联系我。
 
 </div>
 
