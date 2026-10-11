@@ -1,6 +1,6 @@
 - name: ByteDance Seed
   url: https://seed.bytedance.com/en/
-  logo: /images/experience/seed.png
+  logo: /images/experience/seed-logo.png
   dates: "Aug 2025 - Sep 2026"
   en:
     role: Research Intern · LLM Evaluation & Efficient Reasoning
@@ -21,7 +21,7 @@
       Proposed a self-supervised framework for amodal video object segmentation ([NeurIPS 2022 Spotlight](#2022-01-01-self-supervised-amodal-video-object-segmentation)).
 
 - name: Tencent AI Lab
-  url: https://ailab.tencent.com/ailab/en/index/
+  url: https://hunyuan.tencent.com/
   logo: /images/experience/tencent-ai-lab.png
   dates: "Jul 2022 - Apr 2024"
   en:
