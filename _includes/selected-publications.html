@@ -101,9 +101,9 @@
   <div class="wordwrap publication-note">You can find my full publications on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-<div class="publication-footnote">(* equal contribution)</div>
+<div class="publication-footnote">(* equal contribution; † corresponding author)</div>
 
-{% assign publication_groups = "llm_reasoning|🤖 LLM Reasoning|||diversity_rl|🎮 Diversity in RL|||others|🧩 Others (CV & GNN)" | split: "|||" %}
+{% assign publication_groups = "llm_reasoning|🤖 RL for LLM|||diversity_rl|🎮 Diversity in RL|||others|🧩 Others (CV & GNN)" | split: "|||" %}
 
 {% for group in publication_groups %}
   {% assign group_parts = group | split: "|" %}
@@ -122,9 +122,13 @@
         {% endif %}
         {% assign publication_venue = post.display_venue | default: post.venue %}
         {% assign publication_year = post.date | date: "%Y" %}
-        <li>
+        <li id="{{ post.url | split: '/' | last }}">
           [<span class="publication-venue">{{ publication_venue }} {{ publication_year }}</span>{% if post.highlight %} <span class="publication-highlight">{{ post.highlight }}</span>{% endif %}]
-          <a class="publication-title" href="{{ publication_url }}">{{ post.title }}</a>
+          {% if post.unpublished %}
+            <span class="publication-title">{{ post.title }}</span>
+          {% else %}
+            <a class="publication-title" href="{{ publication_url }}">{{ post.title }}</a>
+          {% endif %}
           <span class="publication-authors">{{ post.authors }}.</span>
           <div class="publication-description">{{ post.content | markdownify }}</div>
         </li>

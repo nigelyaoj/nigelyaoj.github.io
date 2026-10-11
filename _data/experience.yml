@@ -1,0 +1,32 @@
+- name: ByteDance Seed
+  url: https://seed.bytedance.com/en/
+  logo: /images/experience/seed.png
+  dates: "Aug 2025 - Sep 2026"
+  en:
+    role: Research Intern · LLM Evaluation & Efficient Reasoning
+    supervision: "Supervised by Xiongcai Luo"
+    description: >-
+      Built LLM evaluation benchmarks and automated scoring pipelines, with statistical analysis to assess evaluation reliability.
+      Developed SLAT to reduce chain-of-thought length by about 50% while maintaining comparable accuracy ([ICML 2026](#2026-01-01-slat)).
+
+- name: Amazon AI Lab
+  url: https://www.amazon.science/
+  logo: /images/experience/amazon.png
+  dates: "Oct 2020 - Feb 2022"
+  en:
+    role: Research Intern · Generative Modeling
+    supervision: "Supervised by [Tong He](https://scholar.google.com/citations?user=hV5D8GYAAAAJ&hl=en) and [Tianjun Xiao](https://scholar.google.com/citations?user=DaKJ9pAAAAAJ&hl=en)"
+    description: >-
+      Developed generative models for interpretable multi-agent trajectory prediction ([NeurIPS 2021](#2021-01-01-grin)).
+      Proposed a self-supervised framework for amodal video object segmentation ([NeurIPS 2022 Spotlight](#2022-01-01-self-supervised-amodal-video-object-segmentation)).
+
+- name: Tencent AI Lab
+  url: https://ailab.tencent.com/ailab/en/index/
+  logo: /images/experience/tencent-ai-lab.png
+  dates: "Jul 2022 - Apr 2024"
+  en:
+    role: Independent Researcher · Reinforcement Learning
+    supervision: "Supervised by Dr. [Haobo Fu](https://haobofu.github.io/)"
+    description: >-
+      Studied policy diversity and population-based reinforcement learning for game AI ([ICLR 2023](#2023-01-01-quality-similar-diversity), [NeurIPS 2023](#2023-01-02-policy-space-diversity)).
+      Developed methods to recover diverse policies from human gameplay and applied them to game AI ([ICLR 2025](#2025-01-01-diverse-policies-recovering)).

@@ -66,6 +66,46 @@ redirect_from:
     max-width: 100%;
     border: 0;
   }
+
+  .experience-list { margin: 0 0 1.5rem; }
+  .experience-item {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 1.1rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--global-border-color, #e6e8eb);
+  }
+  .experience-item:last-child { border-bottom: 0; }
+  .experience-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-top: 0.15rem;
+    border: 1px solid #e6e8eb;
+    border-radius: 14px;
+    background: #fff;
+  }
+  .experience-logo img { width: 48px; height: 48px; object-fit: contain; }
+  .experience-logo--seed { overflow: hidden; }
+  .experience-logo--seed img { width: 144px; max-width: none; height: auto; flex-shrink: 0; transform: translateX(-48px); clip-path: inset(0 0 0 69%); }
+  .experience-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.25rem 1rem; }
+  .page__content .experience-title { margin: 0; font-size: 1.12em; line-height: 1.4; }
+  .experience-title a { color: inherit; text-decoration: none; }
+  .experience-title a:hover { text-decoration: underline; }
+  .experience-dates { color: var(--global-text-color-light, #6b7280); font-size: 0.78em; white-space: nowrap; }
+  .page__content .experience-role { margin: 0.15rem 0 0; font-size: 0.85em; font-weight: 600; }
+  .page__content .experience-supervision { margin: 0.2rem 0 0; font-size: 0.8em; color: var(--global-text-color-light, #6b7280); }
+  .page__content .experience-description { margin-top: 0.5rem; font-size: 0.9em; line-height: 1.6; }
+  .page__content .experience-description p { margin: 0; }
+  @media (max-width: 480px) {
+    .experience-item { grid-template-columns: 48px minmax(0, 1fr); gap: 0.75rem; }
+    .experience-logo { width: 48px; height: 48px; border-radius: 10px; }
+    .experience-logo img { width: 36px; height: 36px; }
+    .experience-logo--seed img { width: 110px; height: auto; transform: translateX(-37px); }
+    .experience-heading { flex-direction: column; }
+  }
 </style>
 
 <div class="about-language-toggle" aria-label="About language">
@@ -75,21 +115,25 @@ redirect_from:
 
 <div class="about-language-panel" data-about-language-panel="en" markdown="1">
 
-I am currently a Ph.D. student in Data Science and Artificial Intelligence at <img class="link-icon" src="https://www.google.com/s2/favicons?domain=polyu.edu.hk&sz=32" alt="">[The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), supervised by Prof. <img class="link-icon" src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=32" alt="">[KC Tan](https://scholar.google.com/citations?user=LFngSp0AAAAJ&hl=en). My research lies at the intersection of <a class="topic-rl" href="/#diversity-rl">Reinforcement Learning </a> and <a class="topic-llm" href="/#llm-reasoning">LLM Reasoning</a>. More broadly, I am interested in <span class="topic-other">Interpretability</span> and <span class="topic-other">Evolutionary Computation with RL (EC + RL)</span>.
+I am currently a Ph.D. student in Data Science and Artificial Intelligence at <img class="link-icon" src="https://www.google.com/s2/favicons?domain=polyu.edu.hk&sz=32" alt="">[The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), supervised by Prof. <img class="link-icon" src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=32" alt="">[KC Tan](https://scholar.google.com/citations?user=LFngSp0AAAAJ&hl=en). Previously, I received my M.S. in Applied Statistics from <img class="link-icon" src="https://www.google.com/s2/favicons?domain=fudan.edu.cn&sz=32" alt="">[Fudan University](https://www.fudan.edu.cn/en/) and my B.S. in Statistics from <img class="link-icon" src="https://www.google.com/s2/favicons?domain=sysu.edu.cn&sz=32" alt="">[Sun Yat-sen University](https://www.sysu.edu.cn/sysuen/).
 
-I received my M.S. in Applied Statistics from <img class="link-icon" src="https://www.google.com/s2/favicons?domain=fudan.edu.cn&sz=32" alt="">[Fudan University](https://www.fudan.edu.cn/en/) and my B.S. in Statistics from <img class="link-icon" src="https://www.google.com/s2/favicons?domain=sysu.edu.cn&sz=32" alt="">[Sun Yat-sen University](https://www.sysu.edu.cn/sysuen/). I was fortunate to enjoy research experiences at [Tencent AI Lab](https://ai.tencent.com/ailab/en/index), advised by Dr. <img class="link-icon" src="https://www.google.com/s2/favicons?domain=haobofu.github.io&sz=32" alt="">[Haobo Fu](https://haobofu.github.io/), where I focused on Policy Diversity in RL; at [ByteDance Seed](https://seed.bytedance.com/en/), advised by Xiongcai Luo, where I worked on efficient reasoning and on-policy distillation; and at [Amazon Web Services AI Lab](https://aws.amazon.com/), advised by <img class="link-icon" src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=32" alt="">[Tong He](https://scholar.google.com/citations?user=hV5D8GYAAAAJ&hl=en) and <img class="link-icon" src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=32" alt="">[Tianjun Xiao](https://scholar.google.com/citations?user=DaKJ9pAAAAAJ&hl=en), where I worked on video object segmentation.
+My research spans <a class="topic-rl" href="#diversity-rl">policy diversity in traditional reinforcement learning</a> and <a class="topic-llm" href="#llm-reasoning">reinforcement learning for LLM reasoning (RL for LLM)</a>.
 
-I am always happy to discuss research ideas around <a class="topic-rl" href="/#diversity-rl">RL</a>, <a class="topic-llm" href="/#llm-reasoning">LLM Reasoning</a>, <span class="topic-other">Interpretability</span>, and <span class="topic-other">EC + RL</span>. Please feel free to contact me at [nigelyaoj@gmail.com](mailto:nigelyaoj@gmail.com).
+In **policy diversity**, I study how to learn and recover diverse behaviors while maintaining policy quality. I also investigate how diverse opponent populations can improve multi-agent training. ([ICLR 2023](#2023-01-01-quality-similar-diversity), [NeurIPS 2023](#2023-01-02-policy-space-diversity), [ICLR 2025](#2025-01-01-diverse-policies-recovering))
+
+In **RL for LLM**, I study how diversity-aware optimization and self-play can strengthen reasoning, and how to reduce redundant reasoning. I also develop robust evaluation methods to assess whether performance gains reflect genuine reasoning ability. ([NeurIPS 2025 Spotlight](#2025-05-29-diversity-aware-policy-optimization), [VAR-MATH](#2025-05-28-var-math), [ICML 2026](#2026-01-01-slat), NeurIPS 2026)
 
 </div>
 
 <div class="about-language-panel" data-about-language-panel="zh" markdown="1" hidden>
 
-我目前是[香港理工大学](https://www.polyu.edu.hk/)数据科学与人工智能方向的博士生，由 KC Tan 教授指导。我的研究兴趣主要集中在强化学习（RL）与大语言模型（LLM）推理的交叉方向，也关注可解释性以及演化计算与强化学习（EC + RL）。
+我目前是[香港理工大学](https://www.polyu.edu.hk/)数据科学与人工智能方向的博士生，导师为 [KC Tan](https://scholar.google.com/citations?user=LFngSp0AAAAJ&hl=en) 教授。此前，我在[复旦大学](https://www.fudan.edu.cn/)获得应用统计硕士学位，在[中山大学](https://www.sysu.edu.cn/)获得统计学理学学士学位。
 
-我硕士毕业于[复旦大学](https://www.fudan.edu.cn/)应用统计专业，本科毕业于[中山大学](https://www.sysu.edu.cn/)统计学专业。关于研究经历，我有幸在 [Tencent AI Lab](https://ai.tencent.com/ailab/en/index) 参与研究，在 Haobo Fu 指导下关注 RL 中的策略多样性；在 [ByteDance Seed](https://seed.bytedance.com/en/) 参与 efficient reasoning 和 on-policy distillation 相关研究，由 Xiongcai Luo 指导；也曾在 [Amazon Web Services AI Lab](https://aws.amazon.com/) 参与 video object segmentation 相关研究，由 [Tong He](https://scholar.google.com/citations?user=hV5D8GYAAAAJ&hl=en) 和 [Tianjun Xiao](https://scholar.google.com/citations?user=DaKJ9pAAAAAJ&hl=en) 指导。
+我的研究从<a class="topic-rl" href="#diversity-rl">传统强化学习中的策略多样性</a>，延伸至<a class="topic-llm" href="#llm-reasoning">面向大语言模型推理的强化学习（RL for LLM）</a>。
 
-欢迎交流 RL、LLM Reasoning、可解释性相关研究问题，也可以通过 [nigelyaoj@gmail.com](mailto:nigelyaoj@gmail.com) 联系我。
+在**策略多样性**方面，我研究如何在保持策略质量的同时，学习与恢复多样化行为。我也探索如何利用对手种群的多样性，改善多智能体对抗训练。（[ICLR 2023](#2023-01-01-quality-similar-diversity)、[NeurIPS 2023](#2023-01-02-policy-space-diversity)、[ICLR 2025](#2025-01-01-diverse-policies-recovering)）
+
+在 **RL for LLM** 方面，我关注如何通过多样性感知优化与自博弈训练提升推理能力，并减少冗余推理。我也研究稳健的评估方法，以检验性能提升是否反映真实推理能力。（[NeurIPS 2025 Spotlight](#2025-05-29-diversity-aware-policy-optimization)、[VAR-MATH](#2025-05-28-var-math)、[ICML 2026](#2026-01-01-slat)、NeurIPS 2026）
 
 </div>
 
@@ -117,6 +161,8 @@ I am always happy to discuss research ideas around <a class="topic-rl" href="/#d
     });
   }());
 </script>
+
+{% include experience.html %}
 
 <h2 id="selected-publications">Publications</h2>
 

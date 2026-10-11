@@ -1,0 +1,22 @@
+<section class="experience-section" lang="en">
+<h2 id="experience">Experience</h2>
+<div class="experience-list">
+  {% for experience in site.data.experience %}
+    {% assign copy = experience.en %}
+    <article class="experience-item">
+      <div class="experience-logo{% if experience.name == 'ByteDance Seed' %} experience-logo--seed{% endif %}">
+        <img src="{{ experience.logo | relative_url }}" alt="{{ experience.name }} logo" width="48" height="48" loading="lazy">
+      </div>
+      <div class="experience-content">
+        <div class="experience-heading">
+          <h3 class="experience-title"><a href="{{ experience.url }}">{{ experience.name }}</a></h3>
+          <span class="experience-dates">{{ experience.dates }}</span>
+        </div>
+        <p class="experience-role">{{ copy.role }}</p>
+        <div class="experience-supervision">{{ copy.supervision | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+        <div class="experience-description">{{ copy.description | markdownify }}</div>
+      </div>
+    </article>
+  {% endfor %}
+</div>
+</section>
