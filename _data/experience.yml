@@ -1,7 +1,7 @@
 - name: ByteDance Seed
   url: https://seed.bytedance.com/en/
   logo: /images/experience/seed-logo.png
-  dates: "Aug 2025 - Sep 2026"
+  dates: "Aug 2025 - Jan 2026"
   en:
     role: Research Intern · LLM Evaluation & Efficient Reasoning
     supervision: "Supervised by Xiongcai Luo"

@@ -119,6 +119,8 @@ I am currently a Ph.D. student in Data Science and Artificial Intelligence at <i
 
 My research spans <a class="topic-rl" href="#diversity-rl">policy diversity in traditional reinforcement learning</a> and <a class="topic-llm" href="#llm-reasoning">reinforcement learning for LLM reasoning (RL for LLM)</a>. In **policy diversity**, I study how to learn and recover diverse behaviors while maintaining policy quality. I also investigate how diverse opponent populations can improve multi-agent training. ([ICLR 2023](#2023-01-01-quality-similar-diversity), [NeurIPS 2023](#2023-01-02-policy-space-diversity), [ICLR 2025](#2025-01-01-diverse-policies-recovering)) In **RL for LLM**, I study how diversity-aware optimization and self-play can strengthen reasoning, and how to reduce redundant reasoning. I also develop robust evaluation methods to assess whether performance gains reflect genuine reasoning ability. ([NeurIPS 2025 Spotlight](#2025-05-29-diversity-aware-policy-optimization), [VAR-MATH](#2025-05-28-var-math), [ICML 2026](#2026-01-01-slat), NeurIPS 2026)
 
+I am always happy to discuss research ideas around <a class="topic-rl" href="#diversity-rl">RL</a>, <a class="topic-llm" href="#llm-reasoning">LLM Reasoning</a>, <span class="topic-other">Interpretability</span>, and <span class="topic-other">EC + RL</span>. Please feel free to contact me at [nigelyaoj@gmail.com](mailto:nigelyaoj@gmail.com).
+
 </div>
 
 <div class="about-language-panel" data-about-language-panel="zh" markdown="1" hidden>
@@ -126,6 +128,8 @@ My research spans <a class="topic-rl" href="#diversity-rl">policy diversity in t
 我目前是[香港理工大学](https://www.polyu.edu.hk/)数据科学与人工智能方向的博士生，导师为 [KC Tan](https://scholar.google.com/citations?user=LFngSp0AAAAJ&hl=en) 教授。此前，我在[复旦大学](https://www.fudan.edu.cn/)获得应用统计硕士学位，在[中山大学](https://www.sysu.edu.cn/)获得统计学理学学士学位。
 
 我的研究从<a class="topic-rl" href="#diversity-rl">传统强化学习中的策略多样性</a>，延伸至<a class="topic-llm" href="#llm-reasoning">面向大语言模型推理的强化学习（RL for LLM）</a>。在**策略多样性**方面，我研究如何在保持策略质量的同时，学习与恢复多样化行为。我也探索如何利用对手种群的多样性，改善多智能体对抗训练。（[ICLR 2023](#2023-01-01-quality-similar-diversity)、[NeurIPS 2023](#2023-01-02-policy-space-diversity)、[ICLR 2025](#2025-01-01-diverse-policies-recovering)）在 **RL for LLM** 方面，我关注如何通过多样性感知优化与自博弈训练提升推理能力，并减少冗余推理。我也研究稳健的评估方法，以检验性能提升是否反映真实推理能力。（[NeurIPS 2025 Spotlight](#2025-05-29-diversity-aware-policy-optimization)、[VAR-MATH](#2025-05-28-var-math)、[ICML 2026](#2026-01-01-slat)、NeurIPS 2026）
+
+欢迎交流 RL、LLM Reasoning、可解释性相关研究问题，也可以通过 [nigelyaoj@gmail.com](mailto:nigelyaoj@gmail.com) 联系我。
 
 </div>
 
